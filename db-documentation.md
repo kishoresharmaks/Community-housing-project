@@ -1,7 +1,5 @@
 # Housing Society Management System - Database Documentation
 
-## Overview
-This database schema is designed for a Housing Society Management System that handles multiple residential societies, their residents, complaints, payments, events, and other community-related functionalities.
 
 ## Database Schema
 
