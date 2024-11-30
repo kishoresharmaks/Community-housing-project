@@ -15,4 +15,4 @@ CommUnity is a modular, multi-tenant Community Management System designed to sim
 4.	Complaint and Service Request Management
 5.	Maintenance Payment System
 
-# 	Week-wise module implementation and high-level requirements with output screenshots
+ 
