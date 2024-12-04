@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="UserManagement" />
+        <module name="SocietyManagementService" />
+        <module name="EurakaServer" />
+        <module name="ComplaintRequestService" />
+        <module name="PaymentService" />
+        <module name="EventsUpdatesService" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ComplaintRequestService" options="-parameters" />
+      <module name="EurakaServer" options="-parameters" />
+      <module name="EventsUpdatesService" options="-parameters" />
+      <module name="PaymentService" options="-parameters" />
+      <module name="SocietyManagementService" options="-parameters" />
+      <module name="UserManagement" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,325 @@
+.blocks-summary-sec {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.overall-summary-sec {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  gap: 25px;
+}
+
+.block-summary-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a2a2e; /* Darker background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 50%), 0 0 10px rgb(100 167 202 / 30%); /* Glowing effect */
+  width: 400px;
+  margin: 20px;
+  margin-left: 0;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.block-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 80%), 0 0 15px rgb(100 167 202 / 50%);
+}
+
+.block-info {
+  font-family: Poppins, sans-serif;
+  color: #fff; /* Light text color for contrast */
+}
+
+.block-info h3 {
+  color: #64a7ca; /* Vibrant accent */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.block-info p {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3; /* Muted text for details */
+}
+
+.progress-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* White text */
+}
+
+.svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #44444a; /* Darker background stroke */
+  stroke-width: 3.8;
+}
+
+.circle-fill {
+  fill: none;
+  stroke: #64a7ca; /* Vibrant accent */
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease-out;
+}
+
+.per-text {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  color: #64a7ca; /* Vibrant accent */
+}
+
+/* Additional styling for body and container */
+body {
+  background-color: #181818; /* Overall dark background */
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* General Body Styling */
+body {
+  background-color: #181818; /* Dark background */
+  font-family: Poppins, sans-serif;
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section for Graphs and Cards */
+.blocks-summary-sec, .overall-summary-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Block Summary Card Styling */
+.block-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #2a2a2e; /* Darker background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 50%), 0 0 10px rgb(100 167 202 / 30%);
+  width: 400px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  text-align: center;
+}
+
+.block-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgb(0 0 0 / 80%), 0 0 15px rgb(100 167 202 / 50%);
+}
+
+.block-info h3 {
+  color: #64a7ca; /* Accent color */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.block-info p {
+  color: #b3b3b3; /* Muted text */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Circle Progress Styling */
+.progress-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #44444a;
+  stroke-width: 4;
+}
+
+.circle-fill {
+  fill: none;
+  stroke: #64a7ca; /* Vibrant accent color */
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease-out;
+}
+
+.per-text {
+  font-size: 22px;
+  color: #64a7ca;
+}
+
+/* Graph Container for Chart.js */
+.graph-container {
+  background-color: #2a2a2e;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 50%), 0 0 10px rgb(100 167 202 / 30%);
+  flex: 1;
+}
+
+.graph-title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 350px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effects for graphs */
+.chart-wrapper:hover {
+  background-color: #333;
+  box-shadow: 0 6px 25px rgb(0 0 0 / 60%);
+}
+
+/* Responsive Design */
+@media (width <= 1024px) {
+  .blocks-summary-sec, .overall-summary-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block-summary-card {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .graph-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .block-summary-card {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .chart-wrapper {
+    height: 250px;
+  }
+}
+
+/* Additional Styles for Interactive Elements */
+.button {
+  padding: 10px 20px;
+  background-color: #64a7ca;
+  color: white;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #4a90b0;
+}
+
+/* Animation for Card Hover Effects */
+.block-summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 80%), 0 0 15px rgb(100 167 202 / 50%);
+}
+
+/* Progress Bar Styling for Graphs */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #44444a;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background-color: #64a7ca; /* Progress bar color */
+  border-radius: 5px;
+  width: 70%; /* Example width */
+}

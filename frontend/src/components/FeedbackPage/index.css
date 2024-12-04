@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.feedback-details {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.width {
+  width: 90%;
+  margin: auto;
+}
+
+.right-aligns {
+  align-self: flex-end;
+}
+
+.col-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.less-width {
+  width: 30%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.head-f-center {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444; /* Darker horizontal line */
+  padding: 20px 0; /* Spacing between items */
+}
+
+.feedback-index {
+  font-weight: bold;
+  margin-right: 10px; /* Space between index and content */
+  color: #fff;
+}
+
+.feedback-content {
+  flex-grow: 1; /* Allows content to take up remaining space */
+  color: #fff;
+}
+
+.feedback-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+/* New Styles for consistency */
+.feedback-item:hover {
+  background-color: #2a2a2a; /* Hover effect */
+  cursor: pointer;
+}
+
+.feedback-index {
+  font-size: 16px;
+}
+
+.feedback-content {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+.error-message {
+  color: #ff6b6b;
+}
+
+/* Button styling for feedback submission (if required) */
+.feedback-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.feedback-button:hover {
+  background-color: #34495e;
+}

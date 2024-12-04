@@ -1,0 +1,76 @@
+/* Menu Item Container */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: px; /* Spacing between icon and text */
+  padding: 12px 20px; /* Adjusted padding to fit text and icon neatly */
+  border-radius: 8px; /* Softer, rounded corners */
+  background-color: #333; /* Dark background for the menu item */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #e6e6e6; /* Light text color */
+  font-family: Roboto, sans-serif;
+  font-weight: 600; /* Bold text for emphasis */
+  width: 100%; /* Ensure the item stretches to fill container width */
+  max-width: 320px; /* Limit the width for consistency */
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%); /* Subtle shadow effect */
+  margin-bottom: 12px; /* Space between menu items */
+}
+
+/* Menu Item Hover Effect */
+.menu-item:hover {
+  background-color: #444; /* Slightly lighter shade for hover effect */
+  transform: translateX(6px); /* Slight horizontal movement */
+  box-shadow: 0 6px 16px rgb(0 0 0 / 60%); /* Deeper shadow on hover */
+}
+
+/* Icon Styling */
+.icon {
+  width: 20px; /* Icon size */
+  height: 20px; /* Icon size */
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth scaling effect for icons */
+}
+
+/* Text Styling */
+.text {
+  font-size: 16px; /* Larger text for readability */
+  font-weight: 600; /* Bold weight for visibility */
+  color: #e4e4e4; /* Muted text color for good contrast */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+  flex-grow: 1; /* Text grows to fill remaining space */
+}
+
+/* Icon and Text Hover Effects */
+.menu-item:hover .icon {
+  transform: scale(1.1); /* Icon slightly grows when hovering */
+}
+
+.menu-item:hover .text {
+  color: #00bcd4; /* Cyan color for text on hover */
+}
+
+/* Active State for Menu Item */
+.menu-item.active {
+  background-color: #555; /* Darker background when active */
+  border-left: 4px solid #00bcd4; /* Accent color line on active state */
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px; /* Increased size for the circular background */
+  height: 28px; /* Circular background for icon */
+  border-radius: 50%; /* Circle around the icon */
+  background-color: #55b9f7; /* Darker background for icon */
+  padding: 6px; /* Padding for the icon */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover Effect for Icon Container */
+.menu-item:hover .icon-container {
+  background-color: #00bcd4; /* Cyan background when hovering */
+}

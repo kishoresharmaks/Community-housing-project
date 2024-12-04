@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.blocks-summary-sec {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.overall-summary-sec {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  gap: 25px;
+}
+
+.block-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+  width: 400px;
+  color: #fff;
+}
+
+.block-info {
+  font-family: Inter, sans-serif;
+}
+
+.block-info h3 {
+  color: #64a7ca;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.block-info p {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d3d3d3;
+}
+
+.progress-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #444;
+  stroke-width: 3.8;
+}
+
+.circle-fill {
+  fill: none;
+  stroke: #64a7ca;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease-out;
+}
+
+.per-text {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: #64a7ca;
+}
