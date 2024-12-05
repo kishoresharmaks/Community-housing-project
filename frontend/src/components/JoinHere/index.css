@@ -12,7 +12,7 @@
 
 /* Image Section */
 .image-section {
-  background-image: url('D:/info/frontend/public/image2.jpg'); /* Ensure this path matches your project */
+  background-image: url('./image2.jpg'); /* Ensure this path matches your project */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
