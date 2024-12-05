@@ -3,14 +3,14 @@
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background-image: url('D:\info\frontend\public\resident-bg.png');
+  background-image: url('/frontend/public/resident-bg.png');
   font-family: "Inter" sans-serif;
   background-size: cover;
 
 }
 
 .login-left-sec {
-  background-image: url('D:\info\frontend\public\resident-bg.png');
+  background-image: url('/frontend/public/resident-bg.png');
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -30,7 +30,7 @@ body{
   width: 100vw;
   height: 100vh;
   font-family: Inter, sans-serif;
-  background-image: url('D:\info\frontend\public\building.png');
+  background-image: url('/frontend/public/building.png');
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,7 @@ body{
   width: 50%; /* Adjust the width as needed */
   display: flex;
   padding: 20px;
-  background-image: url('D:\info\frontend\public\building.png');
+  background-image: url('/frontend/public/building.png');
   flex-direction: column;
   justify-content: center; /* Center elements vertically inside */
   align-items: center;
